@@ -6,8 +6,8 @@
 import {test} from 'tap';
 import fs from 'fs-extra';
 import path from 'path';
-import runSWPrecache from '../../src/lib/run-sw-precache';
-import {SW_FILE_NAME} from '../../src/lib/config';
+import runSWPrecache from '../../src/run-sw-precache';
+import {SW_FILE_NAME} from '../../src/config';
 
 /* eslint-disable fecs-camelcase */
 test('run-sw-precache should generate sw.js when index.html presents', t => {

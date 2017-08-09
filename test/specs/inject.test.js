@@ -6,7 +6,7 @@
 import tap from 'tap';
 import fs from 'fs-extra';
 import path from 'path';
-import injectSWRegisterEntry from '../../src/lib/inject';
+import injectSWRegisterEntry from '../../src/inject';
 
 
 let test = tap.test;

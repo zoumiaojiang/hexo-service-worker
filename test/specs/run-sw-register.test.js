@@ -6,7 +6,7 @@
 import tap from 'tap';
 import fs from 'fs-extra';
 import path from 'path';
-import runSWRegister from '../../src/lib/run-sw-register';
+import runSWRegister from '../../src/run-sw-register';
 
 /* eslint-disable fecs-camelcase */
 let test = tap.test;
