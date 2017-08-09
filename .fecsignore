@@ -9,3 +9,4 @@ lib
 src/lib/*.tpl.js
 coverage
 .nyc_output
+npm-debug.*

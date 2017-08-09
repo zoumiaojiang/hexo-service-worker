@@ -9,3 +9,4 @@ src
 coverage
 .nyc_output
 *.test/
+npm-debug.*
