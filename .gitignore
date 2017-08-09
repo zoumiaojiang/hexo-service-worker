@@ -1,0 +1,13 @@
+.DS_Store
+._.DS_Store
+dist
+tmp
+*.log
+*.tmp
+node_modules
+package-lock.json
+*.lock
+lib
+coverage
+.nyc_output
+*.test/

@@ -1,0 +1,40 @@
+{
+  "name": "hexo-service-worker",
+  "version": "1.0.0",
+  "description": "service worker generation and register for hexo",
+  "main": "lib/index.js",
+  "repository": "https://github.com/zoumiaojiang/hexo-service-worker.git",
+  "author": "MJ <zoumiaojiang@gmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "clean": "rimraf lib",
+    "build:tpljs": "babel src/templates --out-dir lib/templates --presets=babili --no-babelrc --no-comments",
+    "build:tpl": "cp src/templates/sw-precache.tpl lib/templates",
+    "build:lib": "babel src --out-dir lib",
+    "build": "npm run clean && npm run build:lib && npm run build:tpljs && npm run build:tpl",
+    "lint": "fecs src/lib",
+    "test": "npm run lint && cross-env NODE_ENV=test nyc tap test/**/*.test.js",
+    "coverage": "nyc report",
+    "prepublish": "npm run lint && npm run test && npm run build"
+  },
+  "dependencies": {
+    "glob": "^7.1.2",
+    "sw-precache": "^5.1.0"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.18.0",
+    "babel-plugin-istanbul": "^4.0.0",
+    "babel-preset-babili": "^0.1.4",
+    "babel-preset-env": "^1.3.2",
+    "cross-env": "^5.0.0",
+    "fs-extra": "^4.0.1",
+    "nyc": "^11.0.2",
+    "pre-commit": "^1.2.2",
+    "rimraf": "^2.6.1",
+    "tap": "^10.0.1"
+  },
+  "peerDependencies": {
+    "hexo": "^3.2.2"
+  },
+  "pre-commit": "lint"
+}
