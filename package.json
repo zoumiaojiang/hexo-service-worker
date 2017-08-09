@@ -1,6 +1,6 @@
 {
   "name": "hexo-service-worker",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "service worker generation and register for hexo",
   "main": "lib/index.js",
   "repository": "https://github.com/zoumiaojiang/hexo-service-worker.git",
