@@ -15,10 +15,9 @@
     "lint": "fecs src/lib",
     "test": "npm run lint && cross-env NODE_ENV=test nyc tap test/**/*.test.js",
     "coverage": "nyc report",
-    "prepublish": "npm run lint && npm run test && npm run build"
+    "prepublish": "npm run test && npm run build"
   },
   "dependencies": {
-    "glob": "^7.1.2",
     "sw-precache": "^5.1.0"
   },
   "devDependencies": {

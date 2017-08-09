@@ -19,7 +19,7 @@ test('run-sw-precache should generate sw.js when index.html presents', t => {
         public_dir: publicDir,
         config: {
             root: '/',
-            offline: {}
+            service_worker: {}
         },
         log: console
     };
@@ -49,7 +49,7 @@ test('run-sw-precache should generate sw.js when use custom sw.tmpl', t => {
         public_dir: publicDir,
         config: {
             root: '/',
-            offline: {}
+            service_worker: {}
         },
         log: console
     };

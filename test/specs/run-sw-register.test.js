@@ -20,7 +20,7 @@ test('sw-regisrer should generate ok', t => {
         public_dir: publicDir,
         config: {
             root: '/',
-            offline: {}
+            service_worker: {}
         },
         log: console
     };
