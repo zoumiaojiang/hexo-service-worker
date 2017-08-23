@@ -27,6 +27,7 @@ export default function () {
     let rootPrefix = root.replace(/\/$/, '');
     let SWPrecacheConfig = Object.assign({
         logger: log.info.bind(log),
+        ignoreUrlParametersMatching: [/./],
         replacePrefix: rootPrefix,
         staticFileGlobs: [hexoPublicDir + '/**/*.{js,html,css,png,jpg,gif,svg,eot,ttf,woff}'],
         stripPrefix: hexoPublicDir,
